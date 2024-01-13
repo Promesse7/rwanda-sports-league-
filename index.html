@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Rwanda Sports League </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./css-files/index.css">
+</head>
+<body>
+
+<div class="header">
+  <h1>Rwanda Sports League</h1>
+  <p>An astonishing spot of happiness.</p>
+
+  <section>
+    <div class="slideshow">
+
+
+
+<!---------- slideshow starts here --------->
+
+
+
+
+
+
+<nav class="slideshow">
+  
+    <a href="#" class="slideshowlink">
+        <H1>
+       Teams
+        </H1>
+        <img src="./images/team.jpg" alt="image">
+       <!-- <a href="#"><button type="button"></button></a>  -->
+    </a>
+    <a href="#" class="slideshowlink">
+        <H1>
+            Players
+        </H1>
+        <img src="./images/players.jpg" alt="image">
+    </a>
+    <a href="#" class="slideshowlink">
+        <H1>
+            Refrees
+        </H1>
+        <img class="lightit" src="./images/refree.jpg" alt="image">
+    </a>
+    <a href="#" class="slideshowlink">
+        <h1>
+          Fanclubs
+        </h1>
+        <img src="./images/fanclubs.jpg" alt="image">
+    </a>
+    <a href="#" class="slideshowlink">
+        <H1>
+            champions
+        </H1>
+        <img src="./images/champions.jpg" alt="image">
+    </a>
+   
+</nav>
+
+<script>
+const slideshow= document.querySelector(".slideshow")
+
+setInterval(() => {
+const firstIcon= slideshow.firstElementChild
+
+
+firstIcon.classList.add('faded-out')
+
+
+setTimeout(() => {
+slideshow.removeChild(firstIcon)
+slideshow.appendChild(firstIcon) 
+
+setTimeout(() => {
+    firstIcon.classList.remove('faded-out')   
+}, 500);
+
+}, 500);
+
+}, 3000);
+</script>
+
+
+<!---------- slideshow ends here --------->
+
+
+
+
+
+    </div>
+  </section>
+</div>
+
+<div class="navbar">
+  <select name="sports-league" id="select-league">
+  <option value="Sports League" selected>Sports League</option>
+  <option value="Kagame Cup" >Kagame Cup</option> 
+  <option value="UEFA champion">UEFA champions League</option> 
+  <option value="Peace Cup">Peace Cup</option>
+  </select>
+  
+  <a href="#">Updates</a>
+  <a href="#">Matches</a>
+  <a href="#" class="right">Register Now!</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>Kagame Cup</h2>
+    <h5>Best of last session.</h5>
+    <div class="fakeimg" style="height:200px;">
+    <img src="./images/fanclubs.jpg" alt="">
+    </div>
+    <p>With great praises to "Yannick mukunzi" as the MVP of the last session of this cup again we take this time to thank everyone who surely took part to show concern to all Rwandans who were on their feet watching this match until its end</p>
+    <h3>More Text</h3>
+    <p>Lorem ipsum dolor sit ame.</p>
+    <div class="fakeimg" style="height:100px;">
+    <img src="./images/players.jpg" alt="">
+     </div><br>
+    <div class="fakeimg" style="height:120px;">
+        <img src="./images/champions.jpg" alt="">
+    </div><br>
+    <div class="fakeimg" style="height:100px;">
+        <img src="./images/team.jpg" alt="">
+    </div>
+  </div>
+  <div class="main">
+    <h2>Best of all Matches of this season</h2>
+    <h3>Rayon sport 0-3 APR football club</h3>
+    <h5>Story by Ndahiro Valens Papy, May 17 2023</h5>
+    <div class="fakeimg" style="height:250px;">
+    <img src="./images/champions.jpg" alt="">
+    </div>
+    <p>This was a new history to be written in the eyes of all Rwandans. With everyone over joyed for this match, it is really an unforgotten one </p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <br>
+    <h2>TITLE HEADING</h2>
+    <h5>Title description, Sep 2, 2017</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Some text..</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>
